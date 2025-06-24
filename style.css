@@ -1,0 +1,129 @@
+/* --- 整體頁面與背景 --- */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #E8F0E5; /* 淺米綠色背景 */
+    font-family: 'Segoe UI', 'Roboto', sans-serif; /* 簡約字體 */
+    color: #333333; /* 深灰色文字 */
+    text-align: center;
+    overflow: hidden;
+}
+
+/* --- 遊戲外框 --- */
+.game-wrapper {
+    background-color: #FFFFFF;
+    border-radius: 15px; /* 適中圓角 */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* 柔和陰影 */
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid #DDDDDD; /* 輕微邊框 */
+}
+
+/* --- 標題樣式 --- */
+h1 {
+    color: #4CAF50; /* 主題綠色 */
+    font-size: 3em;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+    font-weight: 600; /* 加粗 */
+}
+
+/* --- 遊戲容器 --- */
+.game-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+/* --- 遊戲畫布 --- */
+canvas {
+    border: 5px solid #66BB6A; /* 淺綠色邊框 */
+    background-color: #F8FCEF; /* 淺黃綠色遊戲背景 */
+    border-radius: 10px;
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.05);
+}
+
+/* --- 分數板 --- */
+.score-board {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 10px;
+    gap: 20px;
+}
+
+.player-score, .ai-score {
+    font-size: 1.6em;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+    background-color: #F0F4C3; /* 米黃綠色背景 */
+    border: 1px solid #DCE775; /* 邊框 */
+    color: #558B2F; /* 深綠色文字 */
+}
+
+/* --- 難易度選擇區塊 --- */
+.difficulty-selection {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.difficulty-button {
+    padding: 10px 20px;
+    font-size: 1.1em;
+    font-weight: 500;
+    color: #666666;
+    background-color: #F0F0F0; /* 淺灰色 */
+    border: 1px solid #DDDDDD;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    outline: none;
+}
+
+.difficulty-button:hover {
+    background-color: #E0E0E0;
+    transform: translateY(-2px);
+}
+
+.difficulty-button.active {
+    background-color: #8BC34A; /* 選中綠色 */
+    color: white;
+    border-color: #689F38;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+/* --- 開始按鈕 --- */
+#startButton {
+    padding: 15px 30px;
+    font-size: 1.4em;
+    font-weight: 600;
+    color: white;
+    background-color: #4CAF50; /* 主題綠色 */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    outline: none;
+}
+
+#startButton:hover {
+    background-color: #43A047;
+    transform: translateY(-2px);
+}
+
+#startButton:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

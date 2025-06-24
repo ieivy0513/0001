@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>貪食蛇人機對戰</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-wrapper">
+        <h1>貪食蛇人機對戰</h1>
+        <div class="game-container">
+            <canvas id="gameCanvas" width="600" height="600"></canvas>
+            <div class="score-board">
+                <div id="playerScore" class="player-score">玩家分數: 0</div>
+                <div id="aiScore" class="ai-score">電腦分數: 0</div>
+            </div>
+            <div id="difficultySelection" class="difficulty-selection">
+                <button class="difficulty-button" data-difficulty="easy">簡單</button>
+                <button class="difficulty-button active" data-difficulty="medium">中等</button>
+                <button class="difficulty-button" data-difficulty="hard">困難</button>
+            </div>
+            <button id="startButton">開始遊戲</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
